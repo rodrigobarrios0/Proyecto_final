@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(220, 221, 221);
+    color: rgb(0, 0, 0);
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+/*Grid-body*/
+    .grid-container{
+        display: grid;
+
+    }
+/**/
+
+/*Header*/
+    .container {
+        display: flex;
+    }
+
+    #logo{
+        /*Tamaños*/
+        margin: 15px 0px;
+        padding: 0px;
+        width: 50px;
+        border-radius: 100%;
+    }
+
+    .navbar{
+        background-color: rgb(0, 0, 0);
+        
+        /*Posisionamiento*/
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        width: 100%;
+        /**/
+
+        /*Fonts*/
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 17px;
+        /**/
+    }
+
+    .navbar_logo{
+        justify-content: start;
+    }
+
+.menu-h, .fa-bars {
+    display: none;
+}
+    .navbar div{
+        /*Posisionamiento*/
+        margin: 0px;
+    }
+
+    .navbar ul {
+        /*Posisionamiento*/
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar li {
+        margin: 0px 20px;
+    }
+
+    .navbar a {
+        /*Posisionamiento*/
+        display: block;
+        color: aliceblue;
+        text-decoration: none;
+        margin: 0px 20px;
+    }
+
+    .navbar i{
+        margin: 10px;
+    }
+
+    .iconos{
+        width: 25px;
+        margin: 5px;
+    }
+/*Header*/
+/*Contenido*/
+h1{
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+.card {
+            margin-bottom: 20px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+        }
+        .card:hover {
+            transform: translateY(5px);
+        }
+        .card-img-top {
+            height: 300px;
+            object-fit: contain;
+        }
+
+
+        
+        h2 {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+/**/
+/*Footer*/
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;      
+    grid-template-areas:
+        "logo nav redes"
+        "copy copy copy";
+    justify-items: center;
+    gap: 20px;
+    padding: 20px 80px;
+    background-color: #000000;
+    color: white;
+}
+
+.grid-footer li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
+.grid-footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.grid-footer p a{
+    color: rgb(255, 255, 255, 0.5);
+}
+
+/* Áreas del grid */
+.footer-logo {
+    grid-area: logo; 
+    display: flex;
+}
+
+.footer-nav {
+    grid-area: nav; 
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav ul{
+    padding:0px
+}
+
+.footer-redes {
+    grid-area: redes; 
+    display: flex;
+    flex-direction: column;       
+}
+
+.footer-redes h2, a{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.footer-copy { 
+    grid-area: copy;
+    margin: 20px;
+    display: flex;
+    justify-content: center;  
+    align-items: end;
+    color: rgb(255, 255, 255, 0.5);
+}
+/*Footer*/
+
+/*Media-quieries*/
+@media (max-width: 992px){
+
+        .menu-h, .fa-bars {
+    display: block;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;   
+        display: block;
+}
+    .navbar ul {
+        /*Posisionamiento*/
+        display: none;
+    }
+    /*Carrousel cards*/
+    
+}
+
+@media(max-width: 480px){
+    .menu-h, .fa-bars {
+    display: block;
+    }
+
+    img {
+    max-width: 100%;
+    height: auto;   
+    display: block;
+}
+
+
+
+.navbar{
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+
+        /*Posisionamiento*/
+        display: flex;
+        align-items: center;
+        /**/
+
+        /*Fonts*/
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 17px;
+        /**/
+    }
+
+    .navbar div{
+        justify-content: center;
+    }
+
+    .navbar ul {
+        /*Posisionamiento*/
+        display: none;
+    }
+
+    .nav-icons{
+        /*Posisionamiento*/
+        display: none;
+    }
+
+
+    /*Footer*/
+    .grid-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .nav_logo{
+        display: flex;
+        justify-content: center;
+    }
+}

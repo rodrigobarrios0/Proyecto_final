@@ -1,0 +1,1 @@
+Este proyecto esta orientado en un e-commerce de ropa y se iran agregando funcionalidades según se vayan adquiriendo conocimientos.
