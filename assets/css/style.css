@@ -6,6 +6,7 @@
 
 body {
     background-color: rgb(220, 221, 221);
+    width: 100vw;
     color: rgb(0, 0, 0);
     font-family: "Alumni Sans Pinstripe", sans-serif;
     font-weight: 400;
@@ -159,8 +160,7 @@ h1{
         "logo nav redes"
         "copy copy copy";
     justify-items: center;
-    gap: 20px;
-    padding: 20px 80px;
+    padding: 30px 80px;
     background-color: #000000;
     color: white;
 }
@@ -220,79 +220,46 @@ h1{
 
 /*Media-quieries*/
 @media (max-width: 992px){
+    .navbar{
+        padding: 5px 1px;
+    }
 
-        .menu-h, .fa-bars {
-    display: block;
+    .menu-h, .fa-bars {
+        display: block;
     }
     
     img {
         max-width: 100%;
         height: auto;   
         display: block;
-}
+    }
     .navbar ul {
         /*Posisionamiento*/
         display: none;
     }
-    /*Carrousel cards*/
-    
 }
 
 @media(max-width: 480px){
+    
     .menu-h, .fa-bars {
-    display: block;
+        display: block;
     }
 
     img {
-    max-width: 100%;
-    height: auto;   
-    display: block;
-}
-
-
-
-.navbar{
-        background-color: rgb(0, 0, 0);
-        width: 100vw;
-
-        /*Posisionamiento*/
-        display: flex;
-        align-items: center;
-        /**/
-
-        /*Fonts*/
-        font-family: "DM Serif Text", serif;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 17px;
-        /**/
-    }
-
-    .navbar div{
-        justify-content: center;
-    }
-
-    .navbar ul {
-        /*Posisionamiento*/
-        display: none;
-    }
-
-    .nav-icons{
-        /*Posisionamiento*/
-        display: none;
+        max-width: 100%;
+        height: auto;   
+        display: block;
     }
 
 
     /*Footer*/
-    .grid-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-    .nav_logo{
+    .grid-footer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-logo, .grid-nav, .grid-redes, .grid-copy {
+        margin: 10px 0px;
     }
 }
