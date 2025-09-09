@@ -237,9 +237,21 @@ h1{
         /*Posisionamiento*/
         display: none;
     }
+
+        /*Footer*/
+    .grid-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-logo, .grid-nav, .grid-redes, .grid-copy {
+        margin: 10px 0px;
+    }
 }
 
 @media(max-width: 480px){
+    
     
     .menu-h, .fa-bars {
         display: block;
