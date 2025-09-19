@@ -7,7 +7,6 @@
 
 body {
   background-color: rgb(220, 221, 221);
-  width: 100vw;
   color: rgb(0, 0, 0);
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-weight: 400;
@@ -40,7 +39,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 5px 20px;
-  width: 100%;
   /*Fonts*/
   font-family: "DM Serif Text", serif;
   font-weight: 400;
@@ -101,6 +99,7 @@ h1 {
 .card {
   margin-bottom: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
 }
 
 .card:hover {
@@ -110,7 +109,7 @@ h1 {
 .card-img-top {
   height: 400px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 h2 {
