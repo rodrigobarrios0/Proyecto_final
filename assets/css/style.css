@@ -117,6 +117,10 @@ h2 {
   font-weight: bold;
 }
 
+.btn {
+  background: radial-gradient(circle, #686767, #000000);
+}
+
 /*Ayuda*/
 .ayuda {
   background-color: #ffffff;
@@ -261,5 +265,28 @@ h2 {
   }
   .grid-logo, .grid-nav, .grid-redes, .grid-copy {
     margin: 10px 0px;
+  }
+}
+.animacion {
+  transition: transform 0.3s ease;
+}
+.animacion:hover {
+  transform: scale(1.05);
+}
+
+.nav_logo {
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.nav_logo:hover {
+  animation: rotateCube 1s linear;
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }/*# sourceMappingURL=style.css.map */
