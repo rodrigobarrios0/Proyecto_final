@@ -96,6 +96,12 @@ h1 {
   margin: 0px 10px;
 }
 
+.carrousel-img-custom {
+  height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card {
   margin-bottom: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
