@@ -14,6 +14,12 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
 #logo {
   /*Tamaños*/
   margin: 15px 0px;
@@ -96,45 +102,14 @@ h1 {
   margin: 0px 10px;
 }
 
-.carrousel-img-custom {
-  height: 900px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card {
-  margin-bottom: 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  min-height: 600px;
-}
-
-.card:hover {
-  transform: translateY(5px);
-}
-
-.card-img-top {
-  height: 400px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-h2 {
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.btn {
-  background: radial-gradient(circle, #686767, #000000);
-}
-
 /*Ayuda*/
-.ayuda {
-  background-color: #ffffff;
+.card-ayuda, .card-inicio-sesion, .card-contacto {
+  background-color: #e2e2e2;
   border-radius: 8px;
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 16px rgba(11, 100, 3, 0.3);
 }
 
 .preguntas-frecuentes {
@@ -145,6 +120,7 @@ h2 {
 }
 
 .preguntas-frecuentes ol {
+  font-size: 16px;
   text-align: left;
   margin-bottom: 20px;
   padding-left: 20px;
@@ -152,10 +128,52 @@ h2 {
 }
 
 .metodo-compra li {
+  font-size: 14px;
   text-align: left;
   margin-bottom: 10px;
   padding-left: 10px;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.carrousel-img-custom {
+  height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  margin-bottom: 20px;
+  min-height: 600px;
+  box-shadow: 0px 4px 16px rgba(11, 100, 3, 0.3);
+}
+.card .card:hover {
+  transform: translateY(5px);
+}
+.card .card-img-top {
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.card p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+  background: radial-gradient(circle, #686767, #000000);
+}
+
+.card-inicio-sesion {
+  max-height: 500px;
+}
+
+.card-contacto {
+  max-width: 400px;
+  border-radius: 10%;
 }
 
 /*Footer*/
