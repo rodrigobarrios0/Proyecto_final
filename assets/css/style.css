@@ -34,6 +34,17 @@ h1 {
   width: 1px;
 }
 
+/*Tarjetas*/
+.tarjetas img {
+  width: 50px;
+  margin: 10px 0px 40px 0px;
+}
+
+/*como tomar medidas*/
+.medidas {
+  width: 500px;
+}
+
 /*Header*/
 .container {
   display: flex;
@@ -135,19 +146,11 @@ h1 {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.carrousel-img-custom {
-  height: 900px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
+/*Cards*/
 .card {
   margin-bottom: 20px;
   min-height: 600px;
   box-shadow: 0px 4px 16px rgba(11, 100, 3, 0.3);
-}
-.card .card:hover {
-  transform: translateY(5px);
 }
 .card .card-img-top {
   height: 400px;
@@ -167,13 +170,20 @@ h1 {
   background: radial-gradient(circle, #686767, #000000);
 }
 
+/* Inicio de sesion */
 .card-inicio-sesion {
   max-height: 500px;
 }
 
+/* Contacto */
 .card-contacto {
   max-width: 400px;
   border-radius: 10%;
+}
+
+/*banner*/
+.banner {
+  width: 100%;
 }
 
 /*Footer*/
